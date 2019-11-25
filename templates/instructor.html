@@ -1,0 +1,87 @@
+
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+
+
+
+<h2>{{page_header}}</h2>
+
+
+
+<h3> {{table_title}}</h3>
+
+
+
+<table border="1">
+
+
+
+    <th>CWID</th>
+
+
+
+    <th>Name</th>
+
+
+
+    <th>Department</th>
+
+
+
+    <th>Course</th>
+
+
+
+    <th>Students</th>
+
+
+
+
+
+
+
+    {% for item in instructors %}
+
+
+
+    <tr>
+
+
+
+        <td>{{ item.cwid }}</td>
+
+
+
+        <td>{{ item.name }}</td>
+
+
+
+        <td>{{ item.dept }}</td>
+
+
+
+        <td>{{ item.course }}</td>
+
+
+
+        <td>{{ item.students }}</td>
+
+
+
+    </tr>
+
+
+
+    {% endfor %}
+
+
+
+</table>
+
+
+
+{% endblock %}
+
