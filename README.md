@@ -1,3 +1,3 @@
-Cloud/DevOps:-
 
-This repository has all the info and study material for Cloud/DevOps...
+
+This repository has all the study material and projects 
